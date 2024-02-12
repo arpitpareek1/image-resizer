@@ -1,8 +1,9 @@
 {
-  "name": "image-resizer",
-  "version": "1.0.0",
+  "name": "image-height-width-cropper",
+  "version": "1.0.4",
   "description": "This package can be usefull to resize your images in size and height, width",
   "main": "index.ts",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

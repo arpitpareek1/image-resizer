@@ -1,3 +1,6 @@
+
+class ImageCropper {
+
 /**
  * 
  * @param blob ImageBitmapSource
@@ -6,7 +9,7 @@
  * @returns 
  */
 
-function getResizedCanvas(
+getResizedCanvas(
   blob: ImageBitmapSource,
   width: number,
   height: number
@@ -44,14 +47,14 @@ function getResizedCanvas(
  * @param base64 : base64 encoded string
  * @returns 
  */
-const getImageBlob = (base64: string): Blob => {
+getImageBlob = (base64: string): Blob => {
   return new Blob(
     [new ArrayBuffer(atob(base64.split(',')[1]).length)],
     { type: base64.split(',')[0].split(':')[1].split(';')[0] }
   );
 };
-
-
+}
+export default ImageCropper
 
 
 
